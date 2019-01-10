@@ -2,22 +2,20 @@ package br.ufrj.ppgi.view;
 
 import java.awt.Font;
 
+import javax.swing.ActionMap;
+import javax.swing.GroupLayout;
+import javax.swing.GroupLayout.Alignment;
+import javax.swing.JButton;
+import javax.swing.JDialog;
+import javax.swing.JLabel;
+import javax.swing.LayoutStyle.ComponentPlacement;
+import javax.swing.WindowConstants;
+
 import org.jdesktop.application.Action;
 import org.jdesktop.application.Application;
 import org.jdesktop.application.ResourceMap;
 
 import br.ufrj.ppgi.main.XMLInference;
-
-import javax.swing.ActionMap;
-import javax.swing.GroupLayout;
-import javax.swing.JDialog;
-import javax.swing.JLabel;
-import javax.swing.JButton;
-import javax.swing.LayoutStyle;
-import javax.swing.SwingConstants;
-import javax.swing.WindowConstants;
-import javax.swing.GroupLayout.Alignment;
-import javax.swing.LayoutStyle.ComponentPlacement;
 
 public class AboutBox extends JDialog {
 

@@ -1,36 +1,27 @@
 package wrapper;
 
 import java.io.StringWriter;
-import java.rmi.server.ExportException;
-import java.security.acl.LastOwnerException;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
 import java.util.Stack;
-import java.util.concurrent.BrokenBarrierException;
-import java.util.logging.Level;
 
-import javax.lang.model.element.ElementVisitor;
-import javax.management.modelmbean.XMLParseException;
 import javax.xml.transform.OutputKeys;
 import javax.xml.transform.Transformer;
-import javax.xml.transform.TransformerConfigurationException;
 import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
-import javax.xml.transform.TransformerFactoryConfigurationError;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 
 import br.ufrj.ppgi.parser.DocumentParser;
 import br.ufrj.ppgi.parser.RuleStringParser;
 import br.ufrj.ppgi.parser.SchemaParser;
-import br.ufrj.ppgi.parser.XMLParser;
-import wrapper.QueryElement;
 import wrapper.expressionFilter.Function;
 import wrapper.expressionFilter.IExpression;
 import wrapper.expressionFilter.OperatorEqual;
@@ -38,14 +29,6 @@ import wrapper.expressionFilter.OperatorGreaterEqualThan;
 import wrapper.expressionFilter.OperatorGreaterThan;
 import wrapper.expressionFilter.OperatorLessEqualThan;
 import wrapper.expressionFilter.OperatorLessThan;
-
-import org.junit.runners.ParentRunner;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.NamedNodeMap;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-import org.w3c.dom.ls.LSInput;
 
 public class WrapperSchema extends Wrapper {
 	

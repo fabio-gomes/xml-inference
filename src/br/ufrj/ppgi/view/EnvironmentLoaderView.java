@@ -6,22 +6,22 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Set;
 
+import javax.swing.ActionMap;
+import javax.swing.DefaultListModel;
+import javax.swing.GroupLayout;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JList;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.ListSelectionModel;
+
 import org.jdesktop.application.Action;
 import org.jdesktop.application.Application;
 
 import br.ufrj.ppgi.io.FileManager;
 import br.ufrj.ppgi.io.Serializer;
 import br.ufrj.ppgi.main.XMLInference;
-
-import javax.swing.DefaultListModel;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JList;
-import javax.swing.JScrollPane;
-import javax.swing.JPanel;
-import javax.swing.GroupLayout;
-import javax.swing.ActionMap;
-import javax.swing.ListSelectionModel;
 
 public class EnvironmentLoaderView extends JFrame{
 	private static final long serialVersionUID = 1L;

@@ -3,20 +3,19 @@
  * and open the template in the editor.
  */
 package br.ufrj.ppgi.parser;
-import br.ufrj.ppgi.io.FileManager;
-import br.ufrj.ppgi.parser.ElementoXML.TipoElemento;
-
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Stack;
+
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
+
+import br.ufrj.ppgi.io.FileManager;
 /**
  *
  * @author Rafael Pinheiro

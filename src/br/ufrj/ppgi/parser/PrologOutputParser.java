@@ -1,18 +1,13 @@
 package br.ufrj.ppgi.parser;
 
-import java.awt.font.NumericShaper;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.print.attribute.standard.Finishings;
-
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
 
-import alice.tuprolog.Int;
 import wrapper.Pair;
 import wrapper.Stack;
 import wrapper.WrapperSchema;

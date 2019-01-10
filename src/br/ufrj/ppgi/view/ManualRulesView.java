@@ -4,6 +4,15 @@ import java.awt.Component;
 import java.io.IOException;
 import java.util.HashMap;
 
+import javax.swing.ActionMap;
+import javax.swing.GroupLayout;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+
 import org.jdesktop.application.Action;
 import org.jdesktop.application.Application;
 import org.jdesktop.application.ResourceMap;
@@ -11,15 +20,6 @@ import org.jdesktop.application.ResourceMap;
 import br.ufrj.ppgi.io.FileManager;
 import br.ufrj.ppgi.io.Serializer;
 import br.ufrj.ppgi.main.XMLInference;
-
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
-import javax.swing.JScrollPane;
-import javax.swing.JPanel;
-import javax.swing.GroupLayout;
-import javax.swing.ActionMap;
-import javax.swing.JTextArea;
 
 public class ManualRulesView extends JFrame{
 	private static final long serialVersionUID = 1L;

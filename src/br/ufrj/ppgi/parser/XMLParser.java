@@ -8,7 +8,11 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Map;
 import java.util.Set;
+
+import javax.xml.parsers.SAXParser;
+import javax.xml.parsers.SAXParserFactory;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -17,13 +21,6 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 import br.ufrj.ppgi.io.FileManager;
-
-import javax.xml.parsers.SAXParserFactory; 
-import javax.xml.parsers.SAXParser; 
-
-import br.ufrj.ppgi.parser.DefaultHandleSAX;
-
-import java.util.Map;
 
 
 public class XMLParser extends DocumentParser{

@@ -1,5 +1,16 @@
 package br.ufrj.ppgi.prolog;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.FilterOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.io.PrintStream;
+import java.io.PrintWriter;
+import java.lang.reflect.Field;
+
+import javax.swing.JOptionPane;
+
 import alice.tuprolog.Prolog;
 import alice.tuprolog.SolveInfo;
 import alice.tuprolog.Theory;
@@ -7,30 +18,6 @@ import alice.tuprolog.event.OutputEvent;
 import alice.tuprolog.event.OutputListener;
 import br.ufrj.ppgi.io.FileManager;
 import br.ufrj.ppgi.parser.PrologOutputParser;
-import jpl.Atom;
-import jpl.Compound;
-import jpl.Query;
-import jpl.Term;
-import jpl.Variable;
-
-import java.io.BufferedReader;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileReader;
-import java.io.FilterOutputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
-import java.io.PrintStream;
-import java.io.PrintWriter;
-import java.lang.reflect.Field;
-import java.nio.file.Files;
-import java.util.Hashtable;
-import java.util.Iterator;
-import java.util.Map;
-
-import javax.swing.JOptionPane;
 
 
 class LoggedPrintStream extends PrintStream {

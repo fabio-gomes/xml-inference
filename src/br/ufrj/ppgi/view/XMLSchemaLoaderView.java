@@ -8,6 +8,16 @@ import java.awt.event.MouseListener;
 import java.io.File;
 import java.util.HashMap;
 
+import javax.swing.ActionMap;
+import javax.swing.DefaultListModel;
+import javax.swing.GroupLayout;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JList;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.ListSelectionModel;
+
 import org.jdesktop.application.Action;
 import org.jdesktop.application.Application;
 import org.jdesktop.application.ResourceMap;
@@ -15,15 +25,6 @@ import org.jdesktop.application.ResourceMap;
 import br.ufrj.ppgi.io.FileManager;
 import br.ufrj.ppgi.main.XMLInference;
 import br.ufrj.ppgi.parser.SchemaParser;
-import javax.swing.DefaultListModel;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JList;
-import javax.swing.JScrollPane;
-import javax.swing.JPanel;
-import javax.swing.GroupLayout;
-import javax.swing.ActionMap;
-import javax.swing.ListSelectionModel;
 
 public class XMLSchemaLoaderView extends JFrame{
 	private static final long serialVersionUID = 1L;

@@ -5,11 +5,31 @@ import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
 import java.io.IOException;
 
+import javax.swing.ActionMap;
+import javax.swing.ButtonGroup;
+import javax.swing.GroupLayout;
+import javax.swing.JButton;
+import javax.swing.JDialog;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+import javax.swing.JScrollPane;
+import javax.swing.JSeparator;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+import javax.swing.KeyStroke;
+import javax.swing.SwingConstants;
+
 import org.jdesktop.application.Action;
 import org.jdesktop.application.Application;
+import org.jdesktop.application.FrameView;
 import org.jdesktop.application.ResourceMap;
 import org.jdesktop.application.SingleFrameApplication;
-import org.jdesktop.application.FrameView;
 
 import br.ufrj.ppgi.io.FileManager;
 import br.ufrj.ppgi.io.Serializer;
@@ -17,38 +37,8 @@ import br.ufrj.ppgi.main.XMLInference;
 import br.ufrj.ppgi.parser.PrologOutputParser;
 import br.ufrj.ppgi.parser.SchemaParser;
 import br.ufrj.ppgi.prolog.PrologQueryProcessor;
-import br.ufrj.ppgi.view.EnvironmentLoaderView;
-
-
-import test.BenchMark;
 import wrapper.WrapperSchema;
 //
-
-
-
-
-
-
-
-import javax.swing.ButtonGroup;
-import javax.swing.JDialog;
-import javax.swing.JFrame;
-import javax.swing.JButton;
-import javax.swing.JLabel;
-import javax.swing.JMenuBar;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.GroupLayout;
-import javax.swing.JMenu;
-import javax.swing.JMenuItem;
-import javax.swing.ActionMap;
-import javax.swing.JRadioButton;
-import javax.swing.JScrollPane;
-import javax.swing.JTextField;
-import javax.swing.JTextArea;
-import javax.swing.JSeparator;
-import javax.swing.KeyStroke;
-import javax.swing.SwingConstants;
 
 public class XMLInferenceView extends FrameView {
 	private static final String SCHEMA = "XSD";
@@ -141,7 +131,7 @@ public class XMLInferenceView extends FrameView {
 	{
 		if(!SchemaParser.getInstance().schemaIsLoaded())
 		{
-			JOptionPane.showMessageDialog(null, "É necessário realizar o parse do XMLSchema.");
+			JOptionPane.showMessageDialog(null, "Ã‰ necessÃ¡rio realizar o parse do XMLSchema.");
 			return;
 		}
 		
@@ -265,7 +255,7 @@ public class XMLInferenceView extends FrameView {
         schemaLoaderButton.setAction(actionMap.get("loadAutomaticRules")); 
         schemaLoaderButton.setToolTipText(resourceMap.getString("schemaLoaderButton.toolTipText"));
         schemaLoaderButton.setName(resourceMap.getString("schemaLoaderButton.name")); 
-        schemaLoaderButton.setText(" Regras Automáticas ");
+        schemaLoaderButton.setText(" Regras Automï¿½ticas ");
         
         manualRulesButton.setAction(actionMap.get("insertManualRules")); 
         manualRulesButton.setToolTipText(resourceMap.getString("manualRulesButton.toolTipText")); 

@@ -3,7 +3,10 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import jpl.*;
+import jpl.Atom;
+import jpl.JPL;
+import jpl.Query;
+import jpl.Term;
 
 public class SWIPrologDataBase {
 	Query dataBase;

@@ -4,7 +4,6 @@
  */
 package br.ufrj.ppgi.parser;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 /**
@@ -86,7 +85,6 @@ public class ElementoXML {
     	StringBuilder conteudo = new StringBuilder();
     	if (conteudoTexto.size() == 0)
     	{
-    		int a = 0;
     		conteudo.append("");
     	}
     	else

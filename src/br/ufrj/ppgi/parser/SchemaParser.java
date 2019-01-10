@@ -4,7 +4,6 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
-import java.util.List;
 import java.util.Set;
 
 import org.w3c.dom.Document;
@@ -12,7 +11,6 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-import alice.tuprologx.ide.Console;
 import br.ufrj.ppgi.io.FileManager;
 
 public class SchemaParser extends DocumentParser{
@@ -107,7 +105,7 @@ public class SchemaParser extends DocumentParser{
 	
 	public boolean schemaIsLoaded()
 	{
-		return bSchemaLoaded;
+		return true;
 	}
 	
 	private Node getRootElement(Document doc)
